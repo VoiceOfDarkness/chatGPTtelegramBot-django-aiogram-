@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-br6y3=xe1%!7ur#at$to#+fou6^b2+8*eqt11(#qc-7_)nx6@)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -119,7 +119,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = BASE_DIR / 'static/'
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -132,4 +134,13 @@ TELEGRAM_BOT_TOKEN = '6202186976:AAFf-Y25NEOxzDN0s707fsgvISjrvBZJIZ0'
 
 # OpenAI
 
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = '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'
+
+# Webhook
+
+WEBHOOK_HOST = 'https://voiceofdarkness.pythonanywhere.com/'
+WEBHOOK_PATH = '/path/to/api'
+WEBHOOK_URL = f"{WEBHOOK_HOST}{WEBHOOK_PATH}"
+
+WEBAPP_HOST = '0.0.0.0'
+WEBAPP_PORT = 3001

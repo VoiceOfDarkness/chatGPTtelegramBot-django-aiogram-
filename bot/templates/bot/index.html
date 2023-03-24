@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'admin\css\style.css' %}">
+    <title>Document</title>
+    <link rel="icon" href="{% static '\admin\img\favicon-32x32.png' %}" type="image/png"/>
+</head>
+<body class="container mt-5">
+    <div class="hero__wrapper row">
+        <div class="cart col-7">
+            <h1 class="hero__header">My Telegram AI bot, IBAD. <span>uses natural language processing to understand messages and respond with helpful solutions.
+                <br><br>IBAD can detect user intent and provide quick solutions to any of your questions with relevant information tailored to your needs. Created to be your own personal assistant, IBAD can provide product information, help with customer service inquiries, and more. We are confident our AI chatbot will help make your life easier.
+            </span></h1>
+            <div class="button">
+                <a href="https://t.me/chatForAskBot">Get started</a>
+            </div>
+        </div>
+        <div class="hero__phone col-5 ms-2">
+        </div>
+    </div>
+</body>
+</html>

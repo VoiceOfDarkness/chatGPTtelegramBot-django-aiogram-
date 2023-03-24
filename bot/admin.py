@@ -8,4 +8,4 @@ class UserAdmin(admin.ModelAdmin):
     fields = ('username', ('user_text', 'bot_text'), 'created')
     readonly_fields = ('created',)
     search_fields = ('username',)
-    ordering = ('-created',)
+    list_filter = ('username', 'created')
