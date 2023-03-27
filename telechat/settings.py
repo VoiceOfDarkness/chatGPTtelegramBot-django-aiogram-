@@ -128,13 +128,18 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# media
+
+MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_URL = '/media/'
+
 # Telegram
 
 TELEGRAM_BOT_TOKEN = '6202186976:AAFf-Y25NEOxzDN0s707fsgvISjrvBZJIZ0'
 
 # OpenAI
 
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = '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'
 
 # Webhook
 
